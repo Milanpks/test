@@ -1,0 +1,128 @@
+body {
+    padding-top: 50px;
+}
+
+.panel-title{
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.first-box>.panel-heading{
+    background-color: #33bbff;
+    border-color:#33bbff;
+    color: white;
+}
+.second-box>.panel-heading{
+    background-color: #ffb833;
+    border-color:#ffb833;
+    color: white;
+}
+.third-box>.panel-heading{
+    background-color: #9933ff;
+    border-color:#9933ff;
+    color: white;
+}
+.four-box>.panel-heading{
+    background-color:  #33ff77;
+    border-color: #33ff77;
+    color: white;
+}
+.dropdown-menu>li>a{
+   color:#999999; 
+}
+
+
+/*Classes for change color*/
+.blue{
+    background-color: #33bbff !important;
+    border-bottom: #33bbff;
+}
+.orange{
+    background-color: #ffb833 !important;
+    border-bottom: #ffb833; 
+}
+.purple{
+    background-color: #9933ff !important;
+    border-bottom: #9933ff;
+}
+.green{
+    background-color:  #33ff77 !important;
+    border-bottom:  #33ff77;
+}
+
+
+/*Input*/
+input {
+  border: none;
+  width: 100%;
+  float: left;
+  font-size: 15px;
+}
+
+.input-box {
+	border: 1px solid #d9d9d9;
+    outline: 0;
+    padding: 10px;
+}
+.input-box:focus {
+	border: 1px solid #bfbfbf;
+}
+.icon {
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+
+.input-box:not(:valid) ~ .icon {
+	display: none;
+}
+
+.btn-group{
+    width:  100%;
+}
+
+#button {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0px;
+    height: 15px;
+    margin: auto;
+    font-size: 15px;
+    cursor: pointer;
+    color: green;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:  #b3b3b3;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #b3b3b3;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #b3b3b3;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #b3b3b3;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #b3b3b3;
+}
+
+
+ol {padding-left: 20px;}
+
+ol li {padding: 5px;color:#000;}
+
+li:hover{
+  cursor: pointer;
+ }
+
+ul>ol {
+  list-style-type: none;
+    padding: 5px;color:#000;
+}

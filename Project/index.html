@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <meta name="description" content="">
+	<meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>Test</title>
+	
+	<link rel="icon" href="">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 ">
+                <div class="first-box panel panel-default">
+                    <div class="panel-heading" id="first-box">
+                        <div class="dropdown pull-right">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="glyphicon glyphicon-option-vertical"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#" onclick="changecolor('first-box','blue')" >Blue</a></li>
+                              <li><a href="#" onclick="changecolor('first-box','orange')">Orange</a></li>
+                              <li><a href="#" onclick="changecolor('first-box','purple')">Purple</a></li>
+                              <li><a href="#" onclick="changecolor('first-box','green')">Green</a></li>    
+                            </ul>
+                        </div>
+                    <h3 class="panel-title">Ideas / Tasks</h3>
+                    </div>
+                </div>
+                
+                 <div class="btn-group">
+                    <input type="text" name="ListItem" id="myInput" required class="input-box" placeholder="Add a card..." />
+                    <span  id="button" class="icon glyphicon glyphicon-ok" aria-hidden="true"></span>
+                 </div>
+                 <ul>
+                     <ol></ol>
+                 </ul>
+            </div>
+                
+            
+               <div class="col-md-3 col-sm-6 col-xs-12 ">
+                <div class="second-box panel panel-default">
+                    <div class="panel-heading" id="second-box">
+                        <div class="dropdown pull-right">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="glyphicon glyphicon-option-vertical"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#" onclick="changecolor('second-box','blue')" >Blue</a></li>
+                              <li><a href="#" onclick="changecolor('second-box','orange')">Orange</a></li>
+                              <li><a href="#" onclick="changecolor('second-box','purple')">Purple</a></li>
+                              <li><a href="#" onclick="changecolor('second-box','green')">Green</a></li>    
+                            </ul>
+                        </div>
+                    <h3 class="panel-title">In progress</h3>
+                    </div>
+                </div>
+                   
+                 <div class="btn-group">
+                    <input type="text" name="ListItem" id="myInput" required class="input-box" placeholder="Add a card..." />
+                    <span  id="button" class="icon glyphicon glyphicon-ok" aria-hidden="true"></span>
+                 </div>
+                 <ul>
+                     <ol></ol>
+                 </ul>
+            </div>
+            
+               <div class="col-md-3 col-sm-6 col-xs-12 ">
+                <div class="third-box panel panel-default">
+                    <div class="panel-heading" id="third-box">
+                        <div class="dropdown pull-right">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="glyphicon glyphicon-option-vertical"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#" onclick="changecolor('third-box','blue')" >Blue</a></li>
+                              <li><a href="#" onclick="changecolor('third-box','orange')">Orange</a></li>
+                              <li><a href="#" onclick="changecolor('third-box','purple')">Purple</a></li>
+                              <li><a href="#" onclick="changecolor('third-box','green')">Green</a></li>    
+                            </ul>
+                        </div>
+                    <h3 class="panel-title">Ready for review</h3>
+                    </div>
+                </div> 
+                   
+                 <div class="btn-group">
+                    <input type="text" name="ListItem" id="myInput" required class="input-box" placeholder="Add a card..." />
+                    <span  id="button" class="icon glyphicon glyphicon-ok" aria-hidden="true"></span>
+                 </div>
+                 <ul>
+                     <ol></ol>
+                 </ul>
+            </div>
+            
+               <div class="col-md-3 col-sm-6 col-xs-12 ">
+                <div class="four-box panel panel-default">
+                    <div class="panel-heading" id="four-box">
+                        <div class="dropdown pull-right">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="glyphicon glyphicon-option-vertical"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a onclick="changecolor('four-box','blue')" href="#">Blue</a></li>
+                              <li><a onclick="changecolor('four-box','orange')" href="#">Orange</a></li>
+                              <li><a onclick="changecolor('four-box','purple')" href="#">Purple</a></li>
+                              <li><a onclick="changecolor('four-box','green')" href="#">Green</a></li>    
+                            </ul>
+                        </div>
+                    <h3 class="panel-title">Approved</h3>
+                    </div>
+                </div> 
+                   
+                 <div class="btn-group">
+                    <input type="text" name="ListItem" id="myInput" required class="input-box" placeholder="Add a card..." />
+                    <span  id="button" class="icon glyphicon glyphicon-ok" aria-hidden="true"></span>
+                 </div>
+                 <ul>
+                     <ol></ol>
+                 </ul>
+            </div>
+            
+        </div>
+    </div>
+     
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <!-- Change color JS -->
+    <script>
+    function changecolor(divID,color){
+        removeClasses(divID);
+        $('#'+divID).addClass(color);
+    }
+       
+    function removeClasses(divID){
+        $('#'+divID).removeClass('blue');
+        $('#'+divID).removeClass('orange');
+        $('#'+divID).removeClass('purple');
+        $('#'+divID).removeClass('green');
+    }
+    </script> 
+    
+    <!-- add list -->
+    <script>
+            $(document).ready(
+        function(){
+            $('#button').click(
+                function(){
+                    var toAdd = $('input[name=ListItem]').val();
+                     $('ol').append('<li>' + toAdd + '</li>');
+                });
+
+           $("input[name=ListItem]").keyup(function(event){
+              if(event.keyCode == 13){
+                $("#button").click();
+              }         
+          });
+
+
+        }
+    );
+  </script>
+    
+</body>
+
+</html>
